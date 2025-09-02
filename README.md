@@ -9,16 +9,15 @@ The evaluation was conducted by executing our TCN TFLite model on two datasets:
 
 ## Repository structure
 ```
-├── data/
-│ ├── MQTT_power_data__time.csv
-│ └── UDP_power_data__time.csv
+├── MQTT_power_data__time.csv
+├── UDP_power_data_time.csv
 ├── videos/
 │ ├── mqtt_power_recording.mp4
 │ └── udp_power_recording.mp4
 └── README.md
 ```
 
-- **/data** – CSV files with discrete time–power measurements extracted from the USB power meter recordings.  
+- **Root** – CSV files with discrete time–power measurements extracted from the USB power meter recordings.  
 - **/videos** – Full video recordings of the USB power meter during inference on each dataset.  
 
 ---
@@ -35,7 +34,7 @@ The evaluation was conducted by executing our TCN TFLite model on two datasets:
 
 ## Data dictionary
 
-Each CSV in `/data` contains two columns:
+Each CSV file contains two columns:
 
 - `time (s)` – Elapsed time in seconds aligned with the video timeline  
 - `power (w)` – Instantaneous power (Watts) measured from the USB power meter  
